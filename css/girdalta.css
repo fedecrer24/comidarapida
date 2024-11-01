@@ -1,0 +1,66 @@
+.contenedorgrid{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    
+    height: 100px;/*alto de los fr*/
+    /* width: 800px; /*ancho de los fr*/
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'listado listado listado'  /* 'asi1 pepito asi2'*/
+    'footer footer footer';
+    gap: 10px;
+}
+
+.navbar{
+    grid-area: header;
+
+/* background-color: blue;*/
+    /*height: 40px;*/
+}
+
+.centrartab{
+    grid-area: listado;
+}
+
+
+footer {
+    grid-area: footer;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color:  rgb(3, 3, 1);
+    color: white; 
+   /* height: 100px;*/
+   display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.ft{
+    background-color:  rgb(3, 3, 1);
+}
+
+
+.bt1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn{
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    
+        
+    }
+
+
+
+
+
+
